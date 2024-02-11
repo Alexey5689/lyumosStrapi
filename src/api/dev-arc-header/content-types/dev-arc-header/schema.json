@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_arc_headers",
+  "info": {
+    "singularName": "dev-arc-header",
+    "pluralName": "dev-arc-headers",
+    "displayName": "Dev-arcHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arcclass": {
+      "type": "string"
+    },
+    "iconarc": {
+      "type": "text"
+    },
+    "development": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::development.development",
+      "inversedBy": "dev_arc_headers"
+    }
+  }
+}

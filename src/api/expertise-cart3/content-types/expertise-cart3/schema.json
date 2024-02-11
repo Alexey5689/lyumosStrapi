@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expertise_cart3s",
+  "info": {
+    "singularName": "expertise-cart3",
+    "pluralName": "expertise-cart3s",
+    "displayName": "Expertise_cart3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    }
+  }
+}

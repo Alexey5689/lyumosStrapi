@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "swipers",
+  "info": {
+    "singularName": "swiper",
+    "pluralName": "swipers",
+    "displayName": "Swiper"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "d": {
+      "type": "text"
+    }
+  }
+}

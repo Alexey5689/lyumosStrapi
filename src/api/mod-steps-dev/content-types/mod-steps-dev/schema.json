@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mod_steps_devs",
+  "info": {
+    "singularName": "mod-steps-dev",
+    "pluralName": "mod-steps-devs",
+    "displayName": "Mod-stepsDev"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "iconstep": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "modification": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::modification.modification",
+      "inversedBy": "mod_steps_devs"
+    }
+  }
+}

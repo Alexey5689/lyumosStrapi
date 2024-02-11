@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_pipe_concepts",
+  "info": {
+    "singularName": "premium-pipe-concept",
+    "pluralName": "premium-pipe-concepts",
+    "displayName": "PremiumPipe-concept",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "premium_pipe": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::premium-pipe.premium-pipe",
+      "inversedBy": "premium_pipe_concepts"
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "developments",
+  "info": {
+    "singularName": "development",
+    "pluralName": "developments",
+    "displayName": "Development",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dev_arc_headers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dev-arc-header.dev-arc-header",
+      "mappedBy": "development"
+    },
+    "dev_arc_footers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dev-arc-footer.dev-arc-footer",
+      "mappedBy": "development"
+    },
+    "dev_steps_devs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dev-steps-dev.dev-steps-dev",
+      "mappedBy": "development"
+    }
+  }
+}

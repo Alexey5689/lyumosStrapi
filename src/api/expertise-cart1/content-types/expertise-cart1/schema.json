@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expertise_cart1s",
+  "info": {
+    "singularName": "expertise-cart1",
+    "pluralName": "expertise-cart1s",
+    "displayName": "Expertise_cart1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "car_1_bodies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car1-body.car1-body",
+      "mappedBy": "expertise_cart_1"
+    },
+    "car_1_switchers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::car1-switcher.car1-switcher",
+      "mappedBy": "expertise_cart_1"
+    }
+  }
+}

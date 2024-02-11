@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_pipe_abouts",
+  "info": {
+    "singularName": "premium-pipe-about",
+    "pluralName": "premium-pipe-abouts",
+    "displayName": "PremiumPipe-about"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "p": {
+      "type": "text"
+    },
+    "premium_pipe": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::premium-pipe.premium-pipe",
+      "inversedBy": "premium_pipe_abouts"
+    }
+  }
+}

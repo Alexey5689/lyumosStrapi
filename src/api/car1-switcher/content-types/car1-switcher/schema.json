@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "car1_switchers",
+  "info": {
+    "singularName": "car1-switcher",
+    "pluralName": "car1-switchers",
+    "displayName": "car1_switcher",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "string"
+    },
+    "expertise_cart_1": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::expertise-cart1.expertise-cart1",
+      "inversedBy": "car_1_switchers"
+    }
+  }
+}

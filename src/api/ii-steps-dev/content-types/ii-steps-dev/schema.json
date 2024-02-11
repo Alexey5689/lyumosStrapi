@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ii_steps_devs",
+  "info": {
+    "singularName": "ii-steps-dev",
+    "pluralName": "ii-steps-devs",
+    "displayName": "Ii-stepsDev"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "iconstep": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "ii": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ii.ii",
+      "inversedBy": "ii_steps_devs"
+    }
+  }
+}

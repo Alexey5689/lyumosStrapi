@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_arc_footers",
+  "info": {
+    "singularName": "dev-arc-footer",
+    "pluralName": "dev-arc-footers",
+    "displayName": "Dev-arcFooter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arcclass": {
+      "type": "string"
+    },
+    "iconarc": {
+      "type": "text"
+    },
+    "development": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::development.development",
+      "inversedBy": "dev_arc_footers"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mod_arc_headers",
+  "info": {
+    "singularName": "mod-arc-header",
+    "pluralName": "mod-arc-headers",
+    "displayName": "Mod-arcHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arcclass": {
+      "type": "string"
+    },
+    "iconarc": {
+      "type": "text"
+    },
+    "modification": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::modification.modification",
+      "inversedBy": "mod_arc_headers"
+    }
+  }
+}

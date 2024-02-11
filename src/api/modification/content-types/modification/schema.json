@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modifications",
+  "info": {
+    "singularName": "modification",
+    "pluralName": "modifications",
+    "displayName": "Modification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mod_arc_footers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mod-arc-footer.mod-arc-footer",
+      "mappedBy": "modification"
+    },
+    "mod_steps_devs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mod-steps-dev.mod-steps-dev",
+      "mappedBy": "modification"
+    },
+    "mod_arc_headers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::mod-arc-header.mod-arc-header",
+      "mappedBy": "modification"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_pipes",
+  "info": {
+    "singularName": "premium-pipe",
+    "pluralName": "premium-pipes",
+    "displayName": "Premium-pipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "premium_pipe_abouts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::premium-pipe-about.premium-pipe-about",
+      "mappedBy": "premium_pipe"
+    },
+    "premium_pipe_concepts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::premium-pipe-concept.premium-pipe-concept",
+      "mappedBy": "premium_pipe"
+    }
+  }
+}

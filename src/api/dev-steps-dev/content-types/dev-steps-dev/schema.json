@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_steps_devs",
+  "info": {
+    "singularName": "dev-steps-dev",
+    "pluralName": "dev-steps-devs",
+    "displayName": "Dev-stepsDev"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "iconstep": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "development": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::development.development",
+      "inversedBy": "dev_steps_devs"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ii_arc_headers",
+  "info": {
+    "singularName": "ii-arc-header",
+    "pluralName": "ii-arc-headers",
+    "displayName": "Ii-arcHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arcclass": {
+      "type": "string"
+    },
+    "iconarc": {
+      "type": "text"
+    },
+    "ii": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ii.ii",
+      "inversedBy": "ii_arc_headers"
+    }
+  }
+}

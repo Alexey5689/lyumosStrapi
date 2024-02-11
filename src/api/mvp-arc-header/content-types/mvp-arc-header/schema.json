@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mvp_arc_headers",
+  "info": {
+    "singularName": "mvp-arc-header",
+    "pluralName": "mvp-arc-headers",
+    "displayName": "Mvp-arcHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arcclass": {
+      "type": "string"
+    },
+    "iconarc": {
+      "type": "text"
+    },
+    "mvp": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mvp.mvp",
+      "inversedBy": "mvp_arc_headers"
+    }
+  }
+}
